@@ -1,0 +1,32 @@
+repo: de-creator-multichannel-rewriter
+core:
+  repo: agent-skills-core
+  version: 1.0.0
+  tag: v1.0.0
+dependencies:
+- skill: colloquial-rewrite
+  name: 口语化改写
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+- skill: compliance-word-scan
+  name: 平台合规词扫描
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+- skill: platform-format-adapter
+  name: 平台格式适配
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+- skill: scheduled-dispatch
+  name: 定时排期
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+- skill: title-generator
+  name: 标题生成
+  source: agent-skills-core@1.0.0
+  kind: skill
+  required: true
+resolution_rule: 员工仓库对 core 只做 external_dependency 引用，不内联复制 SKILL.md 正文
