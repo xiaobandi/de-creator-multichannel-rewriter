@@ -7,6 +7,19 @@
 
 ![架构](docs/images/architecture.svg)
 
+## 效果（真实执行）
+
+![真实效果](workflows/wf-creator-rewrite-compliance/docs/images/00-effect.png)
+
+*上图为**真实效果对比**，不是示意图：左栏是输入材料与要求，右栏是该次执行的产出原文，
+两栏取自同一次真实执行记录。*
+
+- 完整台账：[`reports/real-run/wf-creator-rewrite-compliance.md`](reports/real-run/wf-creator-rewrite-compliance.md)
+- 录屏与终端回放：[`workflows/wf-creator-rewrite-compliance/docs/images/`](workflows/wf-creator-rewrite-compliance/docs/images/)（`08-demo-run.gif` / `08-demo-run.mp4` / `04-terminal-run.png`）
+- 使用示例：[`workflows/wf-creator-rewrite-compliance/docs/使用示例.md`](workflows/wf-creator-rewrite-compliance/docs/使用示例.md)
+> 实测判定：**通过**　·　可用度 4/5　·　编造数字 0 处　·　红线命中 2 次 / 拦截 2 次
+
+
 **一句话**：矩阵运营者与全平台创作者（日均 3h+ 耗在分发上的人群，据 R2 调研）
 
 ---
@@ -100,7 +113,7 @@ de-creator-multichannel-rewriter/
 
 | 项 | 值 |
 |---|---|
-| 技能文件数 | 48 |
+| 技能文件数 | 73 |
 | 多场景用例数 | 167 |
 | 用例通过 | 167 |
 | 验收结论 | ✅ 通过 |

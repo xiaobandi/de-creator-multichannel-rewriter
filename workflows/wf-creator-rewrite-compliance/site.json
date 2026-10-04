@@ -1,0 +1,15 @@
+{
+  "name": "wf-creator-rewrite-compliance",
+  "title": "平台合规适配",
+  "kind": "workflow",
+  "owner": "de-creator-multichannel-rewriter",
+  "complexity": "S",
+  "phase": "P1",
+  "one_liner": "字数/话题/标签/敏感词逐平台校验→修正",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

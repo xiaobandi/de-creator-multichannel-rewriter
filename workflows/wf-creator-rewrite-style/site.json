@@ -1,0 +1,15 @@
+{
+  "name": "wf-creator-rewrite-style",
+  "title": "一稿多投改写",
+  "kind": "workflow",
+  "owner": "de-creator-multichannel-rewriter",
+  "complexity": "S",
+  "phase": "P1",
+  "one_liner": "原稿→抖音文案/小红书笔记/公众号图文/B 站简介逐平台重写",
+  "pages": [
+    "docs/使用手册.html",
+    "docs/使用示例.html",
+    "docs/用户场景.html",
+    "docs/架构与流程图.html"
+  ]
+}

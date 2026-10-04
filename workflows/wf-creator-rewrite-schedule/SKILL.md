@@ -1,55 +1,67 @@
 ---
-name: wf-creator-rewrite-style
+name: wf-creator-rewrite-schedule
 description: >-
-  多平台分发改写师 的「一稿多投改写」工作流：原稿→抖音文案/小红书笔记/公众号图文/B 站简介逐平台重写。触发方式：人工（成稿后）。
-  当用户要完成「一稿多投改写」这件事、或触发了上述条件时使用。
+  多平台分发改写师 的「定时发布排期表」工作流：内容池→跨平台发布日历→最佳时段建议。触发方式：定时（每周）。
+  当用户要完成「定时发布排期表」这件事、或触发了上述条件时使用。
 license: Proprietary
+compatibility: >-
+  需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
+  跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。
 metadata:
   author: PLATFORM
   version: "1.0.0"
   standard: agent-skills/v1
+  library: agent-skills-library
   layer: L2-workflow
   owner: de_creator_multichannel_rewriter
+  repo: de-creator-multichannel-rewriter
+  visibility: private_to_employee
+  delivery: employee
   complexity: S
   phase: P1
-  source: library
+  source: new
 ---
 
-# 一稿多投改写
+# 定时发布排期表
 
-> 归属：**多平台分发改写师**（`de-creator-multichannel-rewriter`）　触发：人工（成稿后）　
+> 归属：**多平台分发改写师**（`de-creator-multichannel-rewriter`）　触发：定时（每周）　
 > 复杂度 S　阶段 P1
 
 ## 一、这条工作流解决什么
 
-原稿→抖音文案/小红书笔记/公众号图文/B 站简介逐平台重写
+内容池→跨平台发布日历→最佳时段建议
 
-**业务收益**：分发 1-3h→30min，月省约 30-60h×¥30≈¥900-1800 vs ¥20-50
+**业务收益**：排期混乱与撞车归零
 
 ## 二、调用的 SKILL（必填列，逐条锁定版本）
 
 | 技能名 | slug | 来源仓 | 版本 |
 |---|---|---|---|
-| `平台格式适配` | `platform-format-adapter` | core | v1.0.0 |
-| `小红书笔记排版` | `xhs-note-layout` | 本仓 | v1.0.0 |
-| `口语化改写` | `colloquial-rewrite` | core | v1.0.0 |
+| `定时排期` | `scheduled-dispatch` | core | v1.0.0 |
 
 > 公共技能来自 `agent-skills-core@1.0.0`，本仓库只做外部依赖引用，
 > **不内联复制**其正文——这是三层仓库体系的硬规则，避免同一能力多份副本各自漂移。
 
 ## 三、执行步骤（每步四要素齐备）
 
-### 步骤 1：原稿
+### 步骤 1：内容池
 
-- **做**：原稿
+- **做**：内容池
 - **输入来源**：用户提供的原始材料（工作流第 1 步没有「上一步」）/ 本员工知识库 `kb/` / 连接器只读数据；三者皆空时必须停在 G1 闸门
 - **依据与结论**：把本步结论对应到具体输入项
 - **未决 · 待填**：缺数据处写 `<待填>` 并给出获取方式
 
-### 步骤 2：抖音文案/小红书笔记/公众号图文/B 站简介逐平台重写
+### 步骤 2：跨平台发布日历
 
-- **做**：抖音文案/小红书笔记/公众号图文/B 站简介逐平台重写
+- **做**：跨平台发布日历
 - **输入来源**：步骤 1 的产出 / 本员工知识库 `kb/` / 连接器只读数据
+- **依据与结论**：把本步结论对应到具体输入项
+- **未决 · 待填**：缺数据处写 `<待填>` 并给出获取方式
+
+### 步骤 3：最佳时段建议
+
+- **做**：最佳时段建议
+- **输入来源**：步骤 2 的产出 / 本员工知识库 `kb/` / 连接器只读数据
 - **依据与结论**：把本步结论对应到具体输入项
 - **未决 · 待填**：缺数据处写 `<待填>` 并给出获取方式
 
