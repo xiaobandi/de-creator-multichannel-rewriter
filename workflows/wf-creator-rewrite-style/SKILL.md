@@ -3,7 +3,7 @@ name: wf-creator-rewrite-style
 description: >-
   多平台分发改写师 的「一稿多投改写」工作流：原稿→抖音文案/小红书笔记/公众号图文/B 站简介逐平台重写。触发方式：人工（成稿后）。
   当用户要完成「一稿多投改写」这件事、或触发了上述条件时使用。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。

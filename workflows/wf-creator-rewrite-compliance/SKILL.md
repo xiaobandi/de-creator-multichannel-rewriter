@@ -3,7 +3,7 @@ name: wf-creator-rewrite-compliance
 description: >-
   多平台分发改写师 的「平台合规适配」工作流：字数/话题/标签/敏感词逐平台校验→修正。触发方式：事件（WF1 后自动）。
   当用户要完成「平台合规适配」这件事、或触发了上述条件时使用。
-license: Proprietary
+license: Apache-2.0
 compatibility: >-
   需要能读取工作区文件；若环境支持执行代码，将额外启用 scripts/ 下的确定性脚本路径。
   跨 WorkBuddy / ChatGPT / DeepSeek Harness / Kimi Work / 豆包工作。

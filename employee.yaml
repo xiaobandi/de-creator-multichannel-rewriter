@@ -18,7 +18,7 @@ metadata:
   - Coze扣子商店
   - Dify Marketplace
   - 豆包工作
-  license: Proprietary
+  license: Apache-2.0
   version: 1.0.0
 spec:
   positioning: 一稿多投不是搬运，而是逐平台重写+合规适配的分发参谋
